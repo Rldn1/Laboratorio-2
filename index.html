@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2 - Programación Computacional 4</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Laboratorio 2: Etiquetas con JavaScript</h1>
+
+    <div class="card">
+        <h2>1. Slider (input range)</h2>
+        <label>Valor: <span id="valorRange">50</span></label>
+        <input type="range" id="slider" min="0" max="100" value="50">
+        <div class="output-box" id="outputRange">El slider está en 50</div>
+    </div>
+
+    <div class="card">
+        <h2>2. Campo de texto</h2>
+        <label>Escribe algo:</label>
+        <input type="text" id="campoTexto" placeholder="Texto en tiempo real">
+        <div class="output-box" id="outputTexto">Esperando texto...</div>
+    </div>
+
+    <div class="card">
+        <h2>3. Checkbox</h2>
+        <label class="checkbox-label">
+            <input type="checkbox" id="checkTerminos"> Acepto términos y condiciones
+        </label>
+        <div class="output-box" id="outputCheck">No aceptado</div>
+    </div>
+
+    <div class="card">
+        <h2>4. Select (lista desplegable)</h2>
+        <label>Elige un color:</label>
+        <select id="selectColor">
+            <option value="Rojo">Rojo</option>
+            <option value="Verde">Verde</option>
+            <option value="Azul">Azul</option>
+            <option value="Amarillo">Amarillo</option>
+        </select>
+        <div class="output-box" id="outputSelect">Color: Rojo</div>
+    </div>
+
+    <div class="card">
+        <h2>5. Radio buttons</h2>
+        <div class="radio-group">
+            <label><input type="radio" name="opcion" value="Opción A" checked> Opción A</label>
+            <label><input type="radio" name="opcion" value="Opción B"> Opción B</label>
+            <label><input type="radio" name="opcion" value="Opción C"> Opción C</label>
+        </div>
+        <div class="output-box" id="outputRadio">Selección: Opción A</div>
+    </div>
+
+    <div class="card">
+        <h2>6. Selector de fecha</h2>
+        <label>Selecciona una fecha:</label>
+        <input type="date" id="fechaInput">
+        <div class="output-box" id="outputFecha">Fecha no seleccionada</div>
+    </div>
+
+    <div class="card">
+        <h2>7. Botón con contador</h2>
+        <button id="btnContar">Haz clic aquí</button>
+        <div class="output-box" id="outputBoton">Clics: 0</div>
+    </div>
+
+    <div class="card">
+        <h2>8. Área de texto</h2>
+        <label>Escribe algo:</label>
+        <textarea id="areaTexto" rows="4" placeholder="Escribe aquí..."></textarea>
+        <div class="output-box" id="outputTextarea">Caracteres: 0</div>
+    </div>
+
+    <footer>
+        <p>Laboratorio 2 - Programación Computacional IV</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
